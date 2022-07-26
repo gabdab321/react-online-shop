@@ -1,7 +1,9 @@
-import {axios} from "axios";
+import axios from "axios";
 
 export class ProductService {
     static async getAll() {
-        const response = axios.get
+        const response = await axios.get("https://dummyjson.com/products?limit=100")
+        if(response.status !== 200) throw new Error(`the request ended up with status ${response.status}`)
+        return response.data.products
     }
 }
