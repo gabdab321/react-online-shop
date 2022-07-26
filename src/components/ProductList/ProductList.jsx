@@ -4,8 +4,6 @@ import cl from "./ProductList.module.css"
 
 const ProductList = ({products}) => {
 
-    console.log(products)
-
     return (
         <div className={cl.list}>
             {products.map(product =>

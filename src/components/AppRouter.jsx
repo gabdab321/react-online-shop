@@ -1,7 +1,6 @@
 import React from 'react';
 import {Navigate, Route, Routes} from "react-router-dom";
 import {privateRoutes} from "../config/routes";
-import Navbar from "./Navbar/Navbar";
 
 const AppRouter = () => {
     return (

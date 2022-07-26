@@ -6,6 +6,7 @@ import React, {useState} from "react";
 import Products from "./pages/Products";
 import {BrowserRouter} from "react-router-dom";
 import AppRouter from "./components/AppRouter";
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 function App() {
     const [currentCategory, setCurrentCategory] = useState("")

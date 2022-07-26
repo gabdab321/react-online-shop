@@ -6,4 +6,10 @@ export class ProductService {
         if(response.status !== 200) throw new Error(`the request ended up with status ${response.status}`)
         return response.data.products
     }
+
+    static async getById(id) {
+        const response = await axios.get(`https://dummyjson.com/products/${id}`)
+        if(response.status !== 200) throw new Error(`the request ended up with status ${response.status}`)
+        return response.data
+    }
 }
