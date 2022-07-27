@@ -10,8 +10,6 @@ const Slider = ({images}) => {
         return <Loader/>
     }
 
-    console.log(images)
-
     const handleSelect = (selectedIndex, e) => {
         setIndex(selectedIndex)
     }
@@ -20,7 +18,7 @@ const Slider = ({images}) => {
         <Carousel className="slider" activeIndex={index} onSelect={handleSelect}>
             {images.map((image, index) => {
                 return(
-                    <Carousel.Item className="slider__inner" key={image}>
+                    <Carousel.Item key={image}>
                         <img
                             className="d-block slider__item"
                             src={image}

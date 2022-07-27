@@ -3,7 +3,6 @@ import ProductItem from "../ProductItem/ProductItem";
 import cl from "./ProductList.module.css"
 
 const ProductList = ({products}) => {
-
     return (
         <div className={cl.list}>
             {products.map(product =>
