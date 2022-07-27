@@ -10,11 +10,17 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 
 function App() {
     const [currentCategory, setCurrentCategory] = useState("")
+    const [sortMethod, setSortMethod] = useState("")
+    const [searchQuery, setSearchQuery] = useState("")
 
     return (
         <Context.Provider value={{
             currentCategory,
-            setCurrentCategory
+            setCurrentCategory,
+            sortMethod,
+            setSortMethod,
+            searchQuery,
+            setSearchQuery
         }}>
             <BrowserRouter>
                 <div className="App">

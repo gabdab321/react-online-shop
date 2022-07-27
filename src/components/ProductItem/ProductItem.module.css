@@ -8,6 +8,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    min-height: 500px;
 }
 
 .thumbnail{
@@ -49,6 +50,12 @@
     font-size: 18px;
     line-height: 19px;
     display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.price p{
+    margin-bottom: 0;
 }
 
 .oldPrice{
