@@ -5,6 +5,8 @@ import Filter from "../Filter/Filter";
 
 const ProductList = ({products}) => {
 
+    console.log(products)
+
     return (
         <div className={cl.list}>
             <Filter />

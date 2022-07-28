@@ -15,7 +15,7 @@ const ProductPage = () => {
 
     const [fetchProduct, isProductLoading, errorProduct] = useFetching(async () => {
         const response = await ProductService.getById(productId.id)
-        setProduct(response)
+        setProduct(response.data)
     })
 
     console.log(product)

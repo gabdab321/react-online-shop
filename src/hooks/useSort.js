@@ -2,6 +2,8 @@ import {useMemo} from "react";
 
 export const useSortAndSearch = (sortMethod, query, products) => {
     return useMemo(() => {
+        if(products.length === 0) return []
+
         const sortedProducts = (() => {
             switch (sortMethod) {
                 case "":
